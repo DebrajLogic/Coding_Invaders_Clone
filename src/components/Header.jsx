@@ -9,18 +9,18 @@ function Header() {
       <div className="flex gap-10 items-center">
         <div className="flex gap-4">
           <Logo />
-          <div>
+          <div className="hidden sm:flex flex-col">
             <h3>CI: Course3</h3>
             <h2 className="font-bold">Full Stack Course</h2>
           </div>
         </div>
-        <nav className=" m-0 py-1 hover:border-b-2 hover:border-blue-500">
+        <nav className="hidden sm:flex m-0 py-1 hover:border-b-2 hover:border-blue-500">
           Discover New
         </nav>
       </div>
 
       {/* Header Right */}
-      <div className="flex gap-10 items-center">
+      <div className="hidden sm:flex gap-10 items-center ">
         <Link to="/">Help</Link>
         <Link to="/">
           <div className="flex gap-2 items-center">
