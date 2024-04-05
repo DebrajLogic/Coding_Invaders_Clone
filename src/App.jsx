@@ -1,4 +1,4 @@
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Home />
+      <Footer />
     </BrowserRouter>
   );
 }
