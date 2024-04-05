@@ -4,7 +4,7 @@ import { AssignmentForm } from "../components";
 
 function Home() {
   return (
-    <main className="p-6">
+    <main className="p-4 sm:p-6">
       {/* Container Nav Links */}
       <div className="flex">
         <Link
@@ -159,8 +159,8 @@ function Home() {
         </div>
 
         {/* Assignment Section */}
-        <div className="mx-20 my-8">
-          <h3 className="tracking-wide my-6">MODULE 30 ASSESMENT</h3>
+        <div className="mx-2 sm:mx-10 md:mx-20 my-8">
+          <h3 className="tracking-wide my-6">MODULE 30 ASSESSMENT</h3>
           <p className="my-4">
             This assignment has several steps. In the first step, you'll provide
             a response to the prompt. The other steps appear below the{" "}
@@ -202,11 +202,35 @@ function Home() {
 
           {/* Bottom Navigation Button */}
           <div className="my-12 flex items-center justify-center">
-            <button className="border border-gray-300 hover:border-b-4 hover:border-blue-500 px-4 py-2">
+            <button className="flex items-center border border-gray-300 hover:border-b-4 hover:border-blue-500 px-4 py-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                  clipRule="evenodd"
+                />
+              </svg>
               Previous
             </button>
-            <button className=" border border-gray-300 hover:border-b-4 hover:border-blue-500 px-4 py-2">
+            <button className="flex items-center border border-gray-300 hover:border-b-4 hover:border-blue-500 px-8 py-2">
               Next
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                  clipRule="evenodd"
+                />
+              </svg>
             </button>
           </div>
         </div>
